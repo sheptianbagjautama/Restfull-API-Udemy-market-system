@@ -1,0 +1,1311 @@
+{
+	"info": {
+		"_postman_id": "b5e433b8-04c5-47aa-baa4-96fd3fa5d381",
+		"name": "E-Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://restfulapi.test/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNjMTZmODU0NDdhZTM4YmQxZTcwZTBhNDEyZTU1YWZhNzNmNGExMmY5YTlmNGY1ZjczMmI4NGY5NjI4ZTUxZjM5ZjMzMjAzNmU5MDQ2MTFlIn0.eyJhdWQiOiIyIiwianRpIjoiY2MxNmY4NTQ0N2FlMzhiZDFlNzBlMGE0MTJlNTVhZmE3M2Y0YTEyZjlhOWY0ZjVmNzMyYjg0Zjk2MjhlNTFmMzlmMzMyMDM2ZTkwNDYxMWUiLCJpYXQiOjE1NTM2NzUzMDksIm5iZiI6MTU1MzY3NTMwOSwiZXhwIjoxNTg1Mjk3NzA5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Me_7yg_ESEPxh94-LlZBh2VwuY7SUEKeB-k39Tnnd8Di8c8KjFH_qrGvMYdl48t-Nc5e_i34fa1ztXVTdSY7LRYu-r8r3ZOvxCe5NTYBEXy-nOU-5gQPG2OgBxHMEBTn6YE_ehMnzvwpU0UOv4-4SF17bqei3mspeKJ2rVp-m6k2kLYgDM0P1gVKhJanATu-1NyZh-5SIJ9IOO7h4Iq4-1fznjB-nX5K1sU93u1-M8vnJEl5yXUEJ0kmmA_CjfEKISKwsWbaLwydxXcUbYq4avcerXqQOVf5bP0dPCEnDbEeDvAawTxHlFcNtXn3BBOKoiijq1Gfj-46MNt____5t5-lv-E7WnMjXzJ6ISPQXZvZHhaXiuIkYDKYAAjy4kcrmpXtWQkE9en9KPQGhUHoGxGDxCL8EvvSW0Yz1RoW9Tvbpx5nWlKYEGIUjq1II_DFPwDyOs5E8wwDgyYFX62I3lzmuDC68kMVozpCcO-QeXlCv9cjzEpwJLTp3cg-GHJ7nnRO-2ypj-umX1yv4PsUv-lVemjB4cUtOCl9qO9F0gCAxTwctIVICmImBhJNfwA469x0qpJiKvmssak1P0FX8Yr-terHqFSwAIm9biGpISSCipkir9ZQsq5OpfB63iwcZXrM0oKAah8iFw56_bn3hTLDCrfBm7OroqCC1zvlaZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/?",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "nama_customer",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "metode_pembayaran",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/1004",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"1004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "bababa",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "baba@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "komputer",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "komputer",
+							"type": "text"
+						},
+						{
+							"key": " verified",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "admin",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/201",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "sheptian bagja utama",
+							"type": "text"
+						},
+						{
+							"key": "admin",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/201",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"201"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/201",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/201",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"201"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/buyers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/buyers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/buyers/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/buyers/16",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"buyers",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/9",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/201",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"201"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "sheptians",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "asdfasdfasdfe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/1",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/1",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/202",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"202"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/transactions/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/transactions/",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/transactions/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/transactions/1",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/transactions/3/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/transactions/3/categories",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"transactions",
+						"3",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/transactions/1/sellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/transactions/1/sellers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"transactions",
+						"1",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/buyers/1/transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/buyers/1/transactions",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"buyers",
+						"1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/buyers/17/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/buyers/17/products",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"buyers",
+						"17",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/buyers/15/sellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/buyers/17/sellers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"buyers",
+						"17",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/17/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/3/products",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"3",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/3/sellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/3/sellers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"3",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/3/transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/3/transactions",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"3",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/categories/3/buyers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/categories/3/buyers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"categories",
+						"3",
+						"buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/transactions",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/categories",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/buyers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/buyers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/products",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ubahh ahh",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "ubahh euyy",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "available",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/products/203",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"products",
+						"203"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test produk gambar",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test produkk gambarr broo",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/products",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/sellers/18/products/201",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/sellers/18/products/202",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"sellers",
+						"18",
+						"products",
+						"202"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/131/transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/131/transactions",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"131",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/5/buyers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/5/buyers",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"5",
+						"buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/7/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/7/categories",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"7",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/7/categories/150",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/7/categories/150",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"7",
+						"categories",
+						"150"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/7/categories/150",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/7/categories/150",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"7",
+						"categories",
+						"150"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/products/173/buyers/1/transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "quantity",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://restfulapi.test/products/173/buyers/1/transactions",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"products",
+						"173",
+						"buyers",
+						"1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/verify/Jq1X9IEvcrqPHEqURLziMUCZHarqUBFkfdu3AOAy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/verify/Jq1X9IEvcrqPHEqURLziMUCZHarqUBFkfdu3AOAy",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"verify",
+						"Jq1X9IEvcrqPHEqURLziMUCZHarqUBFkfdu3AOAy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/verify/TIHvmEUbqEbdv7n30eed63QB4XZUk4aC2TNUpPSQ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/verify/TIHvmEUbqEbdv7n30eed63QB4XZUk4aC2TNUpPSQ",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"verify",
+						"TIHvmEUbqEbdv7n30eed63QB4XZUk4aC2TNUpPSQ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/5",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"5"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "sheptian bagja utama",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "tianalvian@gmail.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/verify/hB4Cnk3qMsqh18CW1sllz9CKluRNaqvjIDsrReq4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/verify/hB4Cnk3qMsqh18CW1sllz9CKluRNaqvjIDsrReq4",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"verify",
+						"hB4Cnk3qMsqh18CW1sllz9CKluRNaqvjIDsrReq4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://restfulapi.test/users/1/resend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://restfulapi.test/users/1/resend",
+					"protocol": "http",
+					"host": [
+						"restfulapi",
+						"test"
+					],
+					"path": [
+						"users",
+						"1",
+						"resend"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
