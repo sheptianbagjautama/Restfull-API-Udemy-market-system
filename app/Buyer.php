@@ -3,9 +3,11 @@
 namespace App;
 use App\Transaction;
 use App\Scopes\BuyerScope;
+use App\Transformers\BuyerTransformer;
 
 class Buyer extends User
 {
+    public $transformer = BuyerTransformer::class;
     // Menggunakan global scope(BuyerScope) harus diinisialisasi di method bawaan laravel yaitu boot
     protected static function boot()
     {
